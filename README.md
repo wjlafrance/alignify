@@ -1,7 +1,21 @@
-One time I got really annoyed when making code align.
+## One time I got really annoyed when making code align.
+
+### Install like this:
 
 ```
-[19:59:36] [lafrance@alaska ~/dev/alignify]$ ./.build/debug/alignify
+$ swift build -c release 
+Compile Swift Module 'alignify' (1 sources)
+Linking ./.build/release/alignify
+$ cp ./.build/release/alignify ~/bin
+````
+(or where ever else you keep your tools)
+
+### Use like this:
+
+Don't leave a newline after your last entry because alignify is stupid. Maybe hit Ctrl+D twice. I don't pretend to know your shell.
+
+```
+$ alignify
 Paste your code to be alignified and then press Ctrl+D.
 static let blizzardRepresentative = ChatUserFlags(rawValue: 0x00000001)
 static let channelOperator = ChatUserFlags(rawValue: 0x00000002)
